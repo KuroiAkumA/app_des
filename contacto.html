@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vetpet Help</title>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/popper.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">	  
+		<a class="navbar-brand" href="#">
+    	<img src="assets/images/logo.svg" width="30" height="30" alt="Logo">
+    	<span class="ml-2 text-warning"> VetPet Help</span>
+  	</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link text-warning" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link text-warning" href="nosotros.html">Nosotros <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link text-warning" href="servicios.html">Servicios <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link text-warning" href="productos.html">Productos <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link text-warning" href="contacto.html">Contacto <span class="sr-only">(current)</span></a>
+	      </li>	      
+	    </ul>	    
+	  </div>
+	</nav>
+
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-5">
+				<div class="card">					
+					<div class="card-body">
+						<h5>Informacion de contacto</h5><br>
+						<p>Telefono: +56 02 999999</p>
+						<p>Whatsapp: +56 9 99999</p>
+						<p>Email: contacto@vetpet.cl</p>
+						<p>Direccion: Freire #862, San Bernardo.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="card">
+					<div class="card-body">
+						<form>
+							<div class="input-group form-group">
+								<div class="input-group-append">
+									<span class="input-group-text">Nombre</span>
+								</div>
+								<input type="text" id="nombre" class="form-control" data-valid="">
+								<div id="nombre_feed"></div>
+							</div>
+							<div class="input-group form-group">
+								<div class="input-group-append">
+									<span class="input-group-text">Email</span>
+								</div>
+								<input type="email" id="email" class="form-control" data-valid="">
+								<div id="email_feed"></div>
+							</div>
+							<div class="form-group input-group">
+								<div class="input-group-append">
+									<span class="input-group-text">Telefono</span>
+								</div>
+								<input type="number" id="tel" class="form-control" data-valid="">
+								<div id="tel_feed"></div>
+							</div>
+							<div class="form-group input-group">
+								<div class="input-group-append">									
+									<span class="input-group-text">
+										Tipo de solicitud
+									</span>
+								</div>
+									<select id="asunto" class="form-control">
+										<option value="0" selected>Selecciona</option>
+										<option value="1">Consulta</option>
+										<option value="2">Solicitar hora</option>
+										<option value="3">Peluqueria</option>
+										<option value="4">Servicio de cuidado</option>
+										<option value="5">Reclamo o sugerencias</option>
+									</select>
+									<div id="asunto_feed"></div>
+							</div>
+							<div class="form-group input-group">
+								<div class="input-group-append">
+									<span class="input-group-text">Mensaje</span>
+								</div>
+								<textarea id="mensaje" class="form-control" aria-label="With textarea" data-valid=""></textarea>
+							</div>
+							<input type="submit" id="enviar" class="btn btn-danger" disabled="" value="Enviar">
+						</form>				
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/validaciones.js"></script>
+</body>
+</html>
