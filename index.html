@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="assets/js/fontawesome-all.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+	<link rel="icon" href="assets/images/logo.ico">
 
 </head>
 <body>
@@ -39,6 +40,7 @@
 	    </ul>	    
 	  </div>
 	</nav>
+	<div id="textDiv" class="text-center"></div>
 	<div id="slider" class="carousel slide" data-ride="carousel">
 	  <div class="carousel-inner">
 	    <div class="carousel-item active">
@@ -67,8 +69,8 @@
 				          	  <ul class="list-unstyled list-inline">
                               <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="icono fab fa-facebook"></i></a></li>
                               <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="icono fab fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="icono fab fa-instagram"></i></a></li>
                               <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="icono fab fa-google-plus"></i></a></li>
-                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="icono fab fa-linkedin"></i></a></li>
                           </ul>
 				        </ul>
                       </div>
@@ -77,7 +79,9 @@
           </div>
       </footer>
 	<script type="text/javascript">
-		//agregar mensaje de bienvenida
+		var div = document.getElementById("textDiv");  
+    	div.textContent = "<h3>Bienvenidos a nuestra veterinaria Vetpet Help. Aqui contamos con las mejores instalaciones y cn los mejores profecionales para tratar y cuidar de sus mascotas.</h3>";  
+    	var text = div.textContent;
 	</script>
 </body>
 </html>
